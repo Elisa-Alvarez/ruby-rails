@@ -22,7 +22,7 @@ jobs:
           - 5432:5432
     env:
       RAILS_ENV: test
-      DATABASE_URL: "postgres://rails:root@localhost:5432/ruby_rails_test"
+      DATABASE_URL: "postgres:/postgres:root@localhost:5432/ruby_rails_test"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
