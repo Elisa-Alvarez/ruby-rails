@@ -51,7 +51,7 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  gem 'breakman'
+  gem 'brakeman'
   gem 'bundler-audit'
   gem 'capybara'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
