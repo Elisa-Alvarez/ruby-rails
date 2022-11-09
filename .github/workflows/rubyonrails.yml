@@ -14,16 +14,15 @@ jobs:
     services:
       postgres:
         image: postgres:latest
-        ports:
-          - "5432:5432"
         env:
           POSTGRES_DB: ruby_rails_test
-          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: root
-          DB_HOST: localhost
+          POSTGRES_USER: postgres
+        ports:
+          - 5432:5432
     env:
       RAILS_ENV: test
-      DATABASE_URL: "postgres://rails:root@localhost:5432/rails_test"
+      DATABASE_URL: "postgres://rails:root@localhost:5432/ruby_rails_test"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
