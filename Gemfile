@@ -54,7 +54,6 @@ group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'capybara'
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rubocop'
   gem 'rubocop-rails'
